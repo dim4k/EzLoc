@@ -24,6 +24,10 @@
                 </div>
             </div>
             <div class="row">
+                {% for entity in entities %}
+                    {% dump(entity) %}
+                    {% include 'EzLocSiteBundle:Place:detail.html.twig' with {'entity': entity} %}
+                {% endfor %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">

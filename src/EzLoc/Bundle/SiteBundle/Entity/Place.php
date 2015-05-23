@@ -45,14 +45,14 @@ class Place
     /**
      * @var string
      *
-     * @ORM\Column(name="modal_subtitle", type="string", length=255)
+     * @ORM\Column(name="modal_subtitle", type="string", length=255, nullable=true)
      */
     private $modalSubtitle;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="modal_description", type="blob")
+     * @ORM\Column(name="modal_description", type="blob", nullable=true)
      */
     private $modalDescription;
 

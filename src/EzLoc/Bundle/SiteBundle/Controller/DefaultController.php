@@ -8,6 +8,10 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('EzLocSiteBundle:Default:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('EzLocSiteBundle:Place')->findAll();
+
+        return $this->render('EzLocSiteBundle:Default:index.html.twig', array('entities' => $entities,));
     }
 }
