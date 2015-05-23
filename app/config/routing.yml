@@ -1,0 +1,11 @@
+ez_loc_site:
+    resource: "@EzLocSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+site:
+    resource: "@EzLocSiteBundle/Controller/"
+    type:     annotation

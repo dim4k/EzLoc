@@ -1,0 +1,4 @@
+services:
+#    ez_loc_site.example:
+#        class: EzLoc\Bundle\SiteBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

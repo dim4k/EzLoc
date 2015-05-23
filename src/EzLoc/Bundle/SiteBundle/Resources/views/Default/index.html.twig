@@ -1,0 +1,721 @@
+{% extends 'EzLocSiteBundle::layout.html.twig' %}
+
+{% block content %}
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Bienvenue sur l'Ile aux Moines</div>
+                <div class="intro-heading">Dans votre maison de vacances</div>
+                <a href="#portfolio" class="page-scroll btn btn-xl">Commencer la visite</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">La maison en images</h2>
+                    <h3 class="section-subheading text-muted">Cliquez sur les images pour plus d'informations</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/facade.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>La maison</h4>
+                        <p class="text-muted">Situation, extérieurs et plans</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/sejour.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Le Séjour</h4>
+                        <p class="text-muted">La pièce principale de la maison</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/cuisine.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>La Cuisine</h4>
+                        <p class="text-muted">Cuisine toute équipée</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/terrasse2.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Les Terrasses</h4>
+                        <p class="text-muted">2 Terrasses</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/chambrerdc.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Chambre Rez de chaussée</h4>
+                        <p class="text-muted">Chambre 2 personnes</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/sdbrdc.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Salle de bain au Rez de chaussée</h4>
+                        <p class="text-muted">Salle de bain et rangements</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/chambre2.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>2ème Chambre</h4>
+                        <p class="text-muted">Chambre 4 personnes à l'étage</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/chambre3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>3ème Chambre</h4>
+                        <p class="text-muted">Chambre 2 personnes à l'étage</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="bundles/ezlocsite/images/portfolio/sdb.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Salle de bain à l'étage</h4>
+                        <p class="text-muted">Salle de bain + WC</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-recap">
+					<span class="fa-stack fa-4x">
+						<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                    </span><br/>
+                    <h4 class="portfolio-heading">
+                        Rez de Chaussée
+                    </h4>
+                    <p class="text-muted recap">
+                        - 1 chambre parentale lit double<br/>
+                        - 1 salle de bain<br/>
+                        - Cuisine toute équipée<br/>
+                        - Séjour<br/>
+                        - WC<br/>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-recap">
+					<span class="fa-stack fa-4x">
+						<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                    </span><br/>
+                    <h4 class="portfolio-heading">
+                        Etage
+                    </h4>
+                    <p class="text-muted recap">
+                        - 1 chambre lit double + lit superposé + lit gigogne<br/>
+                        - 1 chambre parentale lit double<br/>
+                        - 1 Salle de bain + WC<br/>
+                        - TV, Babyfoot<br/>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-recap">
+					<span class="fa-stack fa-4x">
+						<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<i class="fa fa-list fa-stack-1x fa-inverse"></i>
+                    </span><br/>
+                    <h4 class="portfolio-heading">
+                        Récapitulatif
+                    </h4>
+                    <p class="text-muted recap">
+					<span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-group fa-stack-1x fa-inverse"></i>
+                    </span>
+                        - Maison pour 8-9 Personnes<br/>
+					<span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-moon-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                        - 3 Chambres<br/>
+					<span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                    </span>
+                        - 2 Salles de bain<br/>
+					<span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                        - TV, Internet illimité<br/>
+					<span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                    </span>
+                        - Cuisine toute équipée<br/>
+					<span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                    </span>
+                        - 2 Terrasses + Jardin
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">L'Ile aux Moines</h2>
+                    <h3 class="section-subheading text-muted">Y vivre</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="bundles/ezlocsite/images/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Venir à l'Ile aux Moines</h4>
+                                    <h4 class="subheading">"Le passeur"</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">A 10 minutes en voiture de Vannes vous arrivez à Port Blanc.Vous pouvez garer votre voiture sur le parking gratuit, ou bien arriver par l'un des bus Kiceo qui vous amène de la gare de Vannes à Port Blanc. Toutes les 30 minutes le bateau embarque les passagers pour une traversée de.... 5 minutes !
+                                    <p class="text-muted">Bienvenue à l’île aux moines !</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="bundles/ezlocsite/images/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Activités nautiques</h4>
+                                    <h4 class="subheading">Voile, pêche, plongée...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Les activités nautiques sont nombreuses : voile, plongée, pêche, découverte du Golfe du Morbihan sur l'un des nombreux bateaux qui proposent des promenades. Durant l'été plusieurs festivals ont lieu sur l'île : bien sûr le festival de la voile du 15 août avec ses régates, son bal et son feu d'artifice, du théâtre avec le festival « théâtre en herbes » , de la musique avec « Les escales musicales » et de nombreuses expositions et festivités tout au long de l'été...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="bundles/ezlocsite/images/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Autres activités</h4>
+                                    <h4 class="subheading">Randonnées, détente, découvertes...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Située dans le golfe du Morbihan tout récemment classé Parc Naturel Régional, l’île aux Moines est un cadre idéal pour des vacances en famille dans un environnement exceptionnel et préservé. A 3 minutes à pied de la maison, allez vous prélasser à la plage. Vous pouvez également partir vous ballader à vélo ou parcourir l'île à pied sur le sentier côtier à la découverte de son riche patrimoine mégalithique.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="bundles/ezlocsite/images/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Les commerces</h4>
+                                    <h4 class="subheading">Épicerie, Boulangerie, Pharmacie</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Vous trouverez tous les commerces utiles sur l’Ile aux Moines : 2 supérettes, une boulangerie, 2 poissonniers en saison, des locations de vélos, de nombreux restaurants et crêperies, des artisans d’arts, magasins de vêtements et souvenirs et bien sûr le marché.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>
+                                    <br>vous
+                                    <br></h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Tarifs</h2>
+                    <h3 class="section-subheading text-muted">Prix en euros TTC</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-angle-double-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading"><b>Haute Saison</b></h4><p class="text-muted tarif"><b>Du 18 Juillet au 29 Aout</b><br/><br/></p>
+                    <p class="text-muted tarif">Semaine (samedi au samedi) : <b>1550€</b></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading"><b>Moyenne Saison</b></h4><p class="text-muted tarif"><b>Du 4 Juillet au 18 Juillet</b><br/><br/></p>
+                    <p class="text-muted tarif">Semaine (samedi au samedi) : <b>1300€</b>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-angle-down fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading"><b>Basse Saison</b></h4><p class="text-muted tarif"><b>Du 11 Avril au 4 Juillet<br/>Du 29 Aout au 2 Novembre</b></p>
+                    <p class="text-muted tarif">Semaine (samedi au samedi) : <b>1100€</b></p>
+                </div>
+            </div>
+            <br /><br /><br />
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="service-heading"><b>Week End de Paques</b></h4> <p class="text-muted tarif"><b>03/04/2015 au 06/04/2015 : 600€ (3 nuits)</b></p><br/><br/>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading"><b>Semaine du Golfe / Week End de l'Ascension</b></h4> <p class="text-muted tarif"><b>13/05/2015 au 17/05/2015 : 700€ (4 nuits)</b></p><br/><br/>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading"><b>Week End de la Pentecôte</b></h4> <p class="text-muted tarif"><b>23/05/2015 au 25/05/2015 : 600€ (3 nuits)</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <br/><br/><p class="text-muted tarif" style="font-style : italic">Week end et cours séjours : Nous consulter</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Map Section -->
+    <section id="map">
+        <p>Veuillez patienter pendant le chargement de la carte...</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Nous Contacter</h2>
+                    <h3 class="section-subheading text-white">Pour tout renseignement  complémentaire ou demande de disponibilité n'hésitez pas à nous contacter via le formulaire suivant.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Votre Nom *" id="name" required data-validation-required-message="Entrer votre nom.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Votre Email *" id="email" required data-validation-required-message="Entrer votre adresse email.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Votre Téléphone *" id="phone" required data-validation-required-message="Entrer votre numéro de téléphone.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <div class='col-md-6'>
+                                        <b>Arrivée</b>
+                                        <input type='text' class="form-control" id='date_beg'/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class='col-md-6'>
+                                        <b>Départ</b>
+                                        <input type='text' class="form-control" id='date_end'/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Votre Message *" id="message" required data-validation-required-message="Entrer un message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Envoyer le message</button>
+                                <br/><br/><br/><br/>
+                            </div>
+                            <div class="contact-tel">
+                                <h2 class="section-heading">Téléphone</h2>
+                                <h3 class="section-subheading-nomargin style=(margin-bot:0px;) text-white">Mme Catherine Kim par téléphone au :</h3>
+                                <h2><a href="tel:+33788452974">07.88.45.29.74</a></h2>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; location-ile-aux-moines.fr 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://getbootstrap.com/">Powered by Bootstrap</a>
+                        </li>
+                        <li><a href="http://antoine-kim.fr">Antoine Kim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">La Maison</h2>
+                            <p class="item-intro text-white">Idéale pour des vacances en famille !</p>
+                            <img class="img-responsive" src="bundles/ezlocsite/images/portfolio/maison2.jpg" alt="">
+                            <p class="modal-justify text-white">Située au calme  sur un chemin à l’écart de la route et à 3 minutes à pied de la plage, notre maison située sur un terrain arboré de 1300m2 bénéficie d'une exposition nord/sud et de 2 grandes terrasses en bois où il fait bon profiter du soleil, lézarder ou prendre ses repas l'été. Petite vue mer (Baie du Vran) de la terrasse nord.</p>
+                            <p class="modal-justify text-white">Nous avons particulièrement soigné la décoration car nous aimons y passer des vacances confortables en famille et y recevoir des amis. Elle dispose au rez de chaussée d'un grand séjour, salle à manger, cuisine américaine et d'une suite parentale (une chambre double et sa salle de bain). A l'étage, se trouvent 2 grandes chambres (une avec un lit double et une avec 2 lits superposés + 1 lit gigogne et un lit double sur une mezzanine ) et une salle de bain.</p>
+                            <p class="modal-justify text-white">Dans le couloir qui déssert les pièces de l'étage, vous trouverez une bibliothèque avec livres policiers, romans et livres pour enfants.</p>
+                            <p class="modal-justify text-white">- Le linge de lit et de maison est fourni.<br/>
+                                - Sur demande un lit parapluie pour les bébés.<br/>
+                                - Et parce qu'il est difficile de s'en passer : A votre disposition une connexion internet ADSL...<br/>
+                                - Sauf accord particulier nous ne souhaitons pas accueillir les animaux.<br/>
+                            </p>
+                            <img class="img-responsive" src="bundles/ezlocsite/images/portfolio/aerien.jpg" alt="">
+                            <p></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="text-white">Sejour</h2>
+                            <p class="item-intro text-white">Axe central de la maison.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sejour1.jpg" alt="">
+                            <p class="modal-justify text-white">C'est une grande pièce très agréable, lumineuse et chaleureuse pour se raconter la journée, se détendre dans les fauteuils et canapés, écouter de la musique sur la chaine Hifi Harman Kardon et JBL (choix éclectique de CD ! ) ou autour de la table.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sejour2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sejour3.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">La Cuisine</h2>
+                            <p class="item-intro text-white">Comme à la maison.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/cuisine.jpg" alt="">
+                            <p class="modal-justify text-white">Très bien équipée. Vaisselle pour 10 personnes, grand frigo congélateur, four, micro onde, lave vaisselle. Tout le nécessaire pour passer des vacances confortables.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/cuisine2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/cuisine3.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/cuisine4.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">Les Terrasses</h2>
+                            <p class="item-intro text-white">2 Terrasses pour en profiter toute la journée.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/terrasse2.jpg" alt="">
+                            <p class="modal-justify text-white">2  grandes terrasses en bois : une au sud, l'autre au nord ! Pour profiter de l'extérieur tout au long de la journée. Avec salon de jardin, chaises longues et barbecue.</p>
+                            <p class="modal-justify text-white">Également à votre disposition une douche chaude extérieure bien utile au retour de la plage ou de tout autre activité nautique !</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/terrasse1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/terrasse3.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/terrasse4.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/terrasse5.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">Chambre Rez de Chaussée</h2>
+                            <p class="item-intro text-white">1ere chambre parentale</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambrerdc.jpg" alt="">
+                            <p class="modal-justify text-white">Très belle chambre sur beau plancher composée d'un lit double, d'un placard penderie, d'un petit bureau avec fauteuil. La baie vitrée offre un accès direct à la terrasse sud.  Salle de bain attenante.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambrerdc1.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambrerdc2.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">1ere Salle de bain</h2>
+                            <p class="item-intro text-white">Attenante à la chambre du rez de chaussée</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sdbrdc.jpg" alt="">
+                            <p class="modal-justify text-white">Attenante à la chambre. Elle est équipée d'une douche, d'un radiateur sèche serviette et d'un lave linge.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sdbrdc1.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">2eme Chambre</h2>
+                            <p class="item-intro text-white">La chambre des enfants</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre2.jpg" alt="">
+                            <p class="modal-justify text-white">Cette grande chambre s'adresse plutôt aux enfants mais elle convient également aux plus grands. Elle se compose de 2 lits simples superposés + 1 lit gigogne et d'un couchage double en mezzanine clos par un portillon (ne convient pas aux plus petits ! ). À disposition un véritable baby-foot de bar, une TV écran plat (127cm), des jeux de société.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre21.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre22.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre23.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre24.jpg" alt="">
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre25.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">3eme Chambre</h2>
+                            <p class="item-intro text-white">La 2eme chambre parentale</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre3.jpg" alt="">
+                            <p class="modal-justify text-white">Il s'agit d'une grande chambre très lumineuse, lit double,  jonc de mer au sol. Très jolie vue mer.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/chambre31.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 9 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-white">2ème Salle de bain</h2>
+                            <p class="item-intro text-white">Salle de bain à l'étage</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sdb.jpg" alt="">
+                            <p class="modal-justify text-white">Équipée d'une douche, d'un lavabo et de toilettes. Jolie vue mer.</p>
+                            <img class="img-responsive img-centered" src="bundles/ezlocsite/images/portfolio/sdb1.jpg" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
