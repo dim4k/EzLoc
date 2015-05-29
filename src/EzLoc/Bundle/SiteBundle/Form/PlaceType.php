@@ -17,7 +17,7 @@ class PlaceType extends AbstractType
         $builder
             ->add('title')
             ->add('subtitle')
-            ->add('img')
+            ->add('img', 'file', array('required' => false))
             ->add('modalSubtitle', 'text', array ('required' => false))
             ->add('modalDescription', 'text', array ('required' => false))
         ;
