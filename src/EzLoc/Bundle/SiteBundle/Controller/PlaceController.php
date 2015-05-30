@@ -205,6 +205,9 @@ class PlaceController extends Controller
             'delete_form' => $deleteForm->createView(),
         );
     }
+
+    //TODO : Uploaded Image with the place
+
     /**
      * Deletes a Place entity.
      *
