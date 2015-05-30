@@ -39,7 +39,7 @@ class Place
     /**
      * @var string
      *
-     * @ORM\Column(name="img", type="string", length=255)
+     * @ORM\Column(name="path", type="string", length=255, nullable=true)
      */
     private $path;
 
@@ -122,6 +122,16 @@ class Place
     }
 
     /**
+     * Get path
+     *
+     * @return string
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
+
+    /**
      * Set img
      *
      * @param string $img
@@ -158,14 +168,14 @@ class Place
     protected function getUploadRootDir()
     {
         // le chemin absolu du répertoire où les documents uploadés doivent être sauvegardés
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+        return __DIR__.'/../../../../../web/bundles/ezlocsite/'.$this->getUploadDir();
     }
 
     protected function getUploadDir()
     {
         // on se débarrasse de « __DIR__ » afin de ne pas avoir de problème lorsqu'on affiche
         // le document/image dans la vue.
-        return 'uploads/documents';
+        return 'images/uploads';
     }
 
     public function upload()
