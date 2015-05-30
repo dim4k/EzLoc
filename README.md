@@ -23,7 +23,7 @@ Installation
 git clone https://github.com/dim4k/EzLoc.git
 ```
 
-##### Configure .json files
+##### Install Symfony missing components
 
 Go in your project directory and download Composer :
 
@@ -39,7 +39,19 @@ php composer.phar install
 
 It will install all the components needed for this Symfony project.
 
-Finally run the server (make sure your MySql server is runing) :
+##### Run the server
+
+Make sure your MySql server is runing and run those commands :
+
+```sh
+php app/console doctrine:database:create
+```
+
+```sh
+php app/console doctrine:schema:update --force
+```
+
+Finally launch the server :
 
 ```sh
 php app/console server:run
