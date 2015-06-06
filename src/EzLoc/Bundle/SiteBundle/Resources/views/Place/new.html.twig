@@ -1,4 +1,28 @@
-{% extends '::base.html.twig' %}
+{% extends 'EzLocSiteBundle::layout.admin.html.twig' %}
+{% block leftmenu %}
+    <a href="{{ path('place') }}" class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span> Liste des lieux</a>
+{% endblock %}
+{% block content -%}
+    <h1>Ajouter un lieu</h1>
+    {{ form_start(form) }}
+    <div class="form-horizontal col-md-12">
+        {% for item in form if item.vars['name'] != '_token'%}
+            <div class="form-group">
+                <div class="col-md-4">
+                    {{ form_label(item) }}
+                </div>
+                <div class="col-md-7">
+                    {{ form_widget(item, {'attr' : {'class' : 'form-control'}} ) }}
+                </div>
+            </div>
+        {% endfor %}
+        {{ form_widget(form._token) }}
+
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
+{#{% extends '::base.html.twig' %}
 
 {% block body -%}
     <h1>Place creation</h1>
@@ -12,4 +36,4 @@
         </a>
     </li>
 </ul>
-{% endblock %}
+{% endblock %}#}

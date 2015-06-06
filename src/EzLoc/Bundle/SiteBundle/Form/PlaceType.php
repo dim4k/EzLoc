@@ -18,8 +18,8 @@ class PlaceType extends AbstractType
             ->add('title')
             ->add('subtitle')
             ->add('img', 'file', array('required' => false))
-            ->add('modalSubtitle', 'text', array ('required' => false))
-            ->add('modalDescription', 'text', array ('required' => false))
+            ->add('modalSubtitle', 'textarea', array ('required' => false))
+            ->add('modalDescription', 'textarea', array ('required' => false))
         ;
     }
     
