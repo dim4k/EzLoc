@@ -15,11 +15,21 @@ class PlaceType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('subtitle')
-            ->add('img', 'file', array('required' => false))
-            ->add('modalSubtitle', 'textarea', array ('required' => false))
-            ->add('modalDescription', 'textarea', array ('required' => false))
+            ->add('title', 'text', array(
+                'label'  => 'Titre')
+            )
+            ->add('subtitle','text', array(
+                'label'  => 'Sous titre')
+            )
+            ->add('img', 'file', array(
+                'required' => false, 'label' => 'Image')
+            )
+            ->add('modalSubtitle', 'textarea', array (
+                'required' => false, 'label' => 'Modale')
+            )
+            ->add('modalDescription', 'textarea', array (
+                'required' => false, 'label' => 'Titre modale')
+            )
         ;
     }
     
