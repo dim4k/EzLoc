@@ -17,7 +17,7 @@ Server requirements
 Installation
 ----
 
-##### Clone Github repertory
+##### Clone Github repository
 
 ```sh
 git clone https://github.com/dim4k/EzLoc.git
