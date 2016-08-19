@@ -2,7 +2,7 @@ EzLoc
 =====
 
 
-A Symfony 2 Project, Templating a basic location Website
+A Symfony 2 Project, Templating a basic House rental Website
 
 
 Version
